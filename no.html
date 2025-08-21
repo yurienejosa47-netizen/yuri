@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sadboy Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #000000, #2c2c2c);
+            color: #ffffff;
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 28px;
+            color: #ff4d6d;
+            text-shadow: 2px 2px 5px black;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px;
+        }
+        .side {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .side img {
+            width: 100%;
+            border: 2px solid #ff4d6d;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 0, 76, 0.5);
+        }
+        .center {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .center video {
+            width: 100%;
+            max-width: 500px;
+            border: 2px solid #ff4d6d;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 0, 76, 0.5);
+        }
+        .bottom-video {
+            margin: 50px auto;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+        }
+        .bottom-video video {
+            width: 100%;
+            max-width: 700px;
+            border: 2px solid #ff4d6d;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 0, 76, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>😔 kawawa naman ako di mo na ako lablab bibi koh, sigi na pls mhalain mo ako ulit 💔</h1>
+    
+    <div class="container">
+        <!-- Left side with 2 images -->
+        <div class="side">
+            <img src="left1.jpg" alt="Sad Image 1">
+            <img src="left2.jpg" alt="Sad Image 2">
+        </div>
+
+        <!-- Center with text + video -->
+        <div class="center">
+            <p>P0ruh @lAala n4luNGS B4H????....</p>
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                <source src="video1.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Right side with 2 images -->
+        <div class="side">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.uO7d1RCbT5hUGUFobNbb8AHaHp?pid=Api&P=0&h=220" alt="Sad Image 3">
+            <img src="https://i.pinimg.com/originals/fc/cb/6a/fccb6a76134b8472b39df74dcf1b457b.png" alt="Sad Image 4">
+        </div>
+    </div>
+
+    <!-- Scroll down video -->
+    <div class="bottom-video">
+        <video controls>
+            <source src="video2.mp4" type="video/mp4">
+            <source src="video2.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Background Music -->
+    <audio controls autoplay loop>
+        <source src="C:\Users\mhelr\OneDrive\Pictures\angelbaby\pic\ssstik.io_1755749551552.mp3" type="audio/mpeg">
+        <source src="sad.wav" type="audio/wav">
+        <source src="sad.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        // Try to unmute audio after page interaction
+        window.addEventListener("click", function() {
+            const audio = document.getElementById("bgMusic");
+            audio.muted = true;
+            audio.play().catch(()=>{});
+        });
+    </script>
+</body>
+</html>
+
